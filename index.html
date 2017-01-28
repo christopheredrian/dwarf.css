@@ -1,50 +1,128 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
     <link rel="stylesheet" href="dwarf.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .grids [class*='col-']{
+        .grids [class*='col-'] {
             border: 0.5px solid black;
             padding: 20px;
         }
-        img{
+        
+        img {
             width: 100%;
         }
     </style>
 </head>
-<div class="container ">
-    <h1>Grid</h1>
-    <p>The grid is a 6-column with max-width set to 1200px</p> 
-    <div class="grids text-center">
-        <div class="row ">
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-    </div>
+
+<body>
+    <nav>
+        <ul class="nav nav-fixed">
+            <li><a href="#about">My name</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">About</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="container ">
     <div class="row">
-        <div class="col-2">col-2</div>
-        <div class="col-2">col-2</div>
-        <div class="col-2">col-2</div>        
+        <h1 class="page-header">Navigation</h1>
+        <code>
+           <pre>
+               nav
+                    ul class="nav nav-fixed"
+                        
+           </pre>
+        </code>
+        <p>Remove nav-fixed for static navbar</p>
     </div>
-    <div class="row">
-        <div class="col-3">col-3</div>
-        <div class="col-3">col-3</div>
+
+        <h1 class="page-header">Grid</h1>
+        <p>The grid is a 6-column with max-width set to 1200px</p>
+        <div class="grids text-center">
+            <div class="row ">
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+            </div>
+            <div class="row">
+                <div class="col-2">col-2</div>
+                <div class="col-2">col-2</div>
+                <div class="col-2">col-2</div>
+            </div>
+            <div class="row">
+                <div class="col-3">col-3</div>
+                <div class="col-3">col-3</div>
+            </div>
+            <div class="row">
+                <div class="col-3">col-3</div>
+                <div class="col-2">col-2</div>
+                <div class="col-1">col-1</div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="page-header">Typography</h1>
+            <h1>H1 Heading</h1>
+            <h2>H2 Heading</h2>
+            <h3>H3 Heading</h3>
+            <h4>H4 Heading</h4>
+            <h5>H5 Heading</h5>
+            <h6>H6 Heading</h6>
+        </div>
+        <div class="row">
+            <h1 class="page-header">Images</h1>
+            <div class="col-2">
+                <img src="images/profile.jpg" alt="" class="img-circle img-responsive text-center">
+                <code> img class="img-circle img-responsive"</code>
+            </div>
+            <div class="col-2">
+                <img src="images/profile.jpg" alt="" class="img-rounded img-responsive text-center">
+                <code> img class="img-rounded img-responsive"</code>
+            </div>
+            <div class="col-2">
+                <img src="images/profile.jpg" alt="" class="img-round img-responsive text-center">
+                <code> img class="img-round img-responsive"</code>
+            </div>
+            <div class="img-round"></div>
+        </div>
+        <div class="row">
+            <h1 class="page-header">Tables</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chris</td>
+                        <td>34</td>
+                        <td>Singapore</td>
+                    </tr>
+                    <tr>
+                        <td>Edward</td>
+                        <td>23</td>
+                        <td>Baguio</td>
+                    </tr>
+                    <tr>
+                        <td>Eddie</td>
+                        <td>54</td>
+                        <td>Nevada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div class="row">
-        <div class="col-3">col-3</div>
-        <div class="col-2">col-2</div>
-        <div class="col-1">col-1</div>
-    </div>
-    </div>
-    <div class="row">
-        <h1>Images</h1>
-        <div class="col-1"><img src="images/profile.jpg" alt="" class="img-round img-responsive"></div>
-        <div class="img-round"></div>
-    </div>
-</div>
+</body>
 
 </html>

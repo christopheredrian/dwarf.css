@@ -1,10 +1,19 @@
     /********************************************/
+    /************** NORMALIZE *******************/
+    /********************************************/
+    
+    body {
+        margin: 0;
+    }
+    /********************************************/
     /******************* Grid *******************/
     /********************************************/
     
     .container {
-        width: 100%;
+        margin: 0 auto;
+        width: 80%;
         max-width: 1200px;
+        margin-top: 10%;
     }
     /* Prevent columns outside */
     
@@ -52,13 +61,19 @@
     .col-6 {
         width: 100%;
     }
-
+    
     .center-block {
         margin: 0 auto;
     }
     /********************************************/
     /************* Typography *******************/
     /********************************************/
+    
+    .page-header {
+        font-size: 2em;
+        border-bottom: solid 1px black;
+        padding-bottom: 0.5em;
+    }
     
     .text-center {
         text-align: center;
@@ -72,22 +87,85 @@
         text-align: right;
     }
     
-    body{
+    body {
         font-size: 20px;
-        font-family: 'Scheherazade', serif;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    
-
     /********************************************/
     /***************** IMAGES *******************/
     /********************************************/
-
-    .img-round{
-        /*NOT YET*/
+    
+    .img-circle {
         border-radius: 50%;
     }
-
-    .img-responsive{
+    .img-rounded{
+        border-radius: 3%;
+        
+    }
+    .img-responsive {
         width: 100%;
         height: auto;
+    }
+    /********************************************/
+    /************* NAVIGATION *******************/
+    /********************************************/
+    
+    nav ul.nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    .nav li {
+        font-size: 3vh;
+        float: left;
+    }
+    
+    .nav.nav-right li {
+        float: right;
+    }
+    
+    .nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    .nav li a:hover {
+        background-color: #111;
+    }
+    
+    nav ul.nav-fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    /********************************************/
+    /************* TABLES ***********************/
+    /********************************************/
+    
+    * table{
+        overflow-x:auto;
+    }
+    table {
+        text-align: left;
+        width: 100%;
+    }
+    
+    td,
+    th {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    table th {
+        font-size: 1.7em;
+    }
+    
+    table tr {
+        margin: 0 10%;
     }
